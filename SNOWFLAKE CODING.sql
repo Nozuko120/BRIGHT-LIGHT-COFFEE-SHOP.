@@ -4,11 +4,13 @@ SELECT*
 FROM BRIGHT_COFFEE_SHOP
 LIMIT 10;
 
----------
---- I want to check my categorical columns
+---------explore data analysis
 
+---Checking number of coffee shop
 SELECT DISTINCT store_location
 FROM BRIGHT_COFFEE_SHOP; 
+
+--- I want to check my categorical column
 
 SELECT DISTINCT PRODUCT_CATEGORY
 FROM BRIGHT_COFFEE_SHOP;
@@ -17,8 +19,7 @@ SELECT MIN(transaction_date) AS first_operating_date
 FROM BRIGHT_COFFEE_SHOP;
 
 SELECT MAX(transaction_date) AS last_operating_date
-FROM BRIGHT_COFFEE_SHOP
-LIMIT 10;
+FROM BRIGHT_COFFEE_SHOP;
 
 SELECT MIN(transaction_time) AS opening_hour
 FROM  BRIGHT_COFFEE_SHOP; 
@@ -43,7 +44,8 @@ CASE
  END AS time_classification,
       
  HOUR(transaction_time) AS hour_of_day,
-
+      
+---checking numbers of product categorie
  Store_location,
  product_category,
  product_detail,
@@ -60,3 +62,4 @@ CASE
 
 
 -------
+
