@@ -15,14 +15,22 @@ FROM BRIGHT_COFFEE_SHOP;
 SELECT DISTINCT PRODUCT_CATEGORY
 FROM BRIGHT_COFFEE_SHOP;
 
+---Checking the date business starts operating
+
 SELECT MIN(transaction_date) AS first_operating_date
 FROM BRIGHT_COFFEE_SHOP;
+
+---Checking the date business stops operating
 
 SELECT MAX(transaction_date) AS last_operating_date
 FROM BRIGHT_COFFEE_SHOP;
 
+----Checking what time does the shop opens
+
 SELECT MIN(transaction_time) AS opening_hour
 FROM  BRIGHT_COFFEE_SHOP; 
+
+---Checking what time does the shop close
 
 SELECT MAX(transaction_time) AS closing_hour
 FROM BRIGHT_COFFEE_SHOP;
@@ -62,4 +70,5 @@ CASE
 
 
 -------
+
 
