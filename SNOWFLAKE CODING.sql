@@ -6,7 +6,8 @@ LIMIT 10;
 
 ---------explore data analysis
 
----Checking number of coffee shop
+---Checking number of coffee shops
+
 SELECT DISTINCT store_location
 FROM BRIGHT_COFFEE_SHOP; 
 
@@ -70,5 +71,6 @@ CASE
 
 
 -------
+
 
 
